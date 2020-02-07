@@ -3,12 +3,12 @@ import { Card } from 'react-bootstrap'
 
 const Block = (props) => {
 	return (  
-		<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 block">
+		<div className="card-col col-md-3 col-sm-6 col-xs-12 block">
 			<Card style={{ width: '100%', height: '100%' }}>
 				{ props.card['showBridge'] ? 
-					<Card.Img variant="top" src="https://i.imgur.com/g5z4lk6.png" />
+					<Card.Img variant="top" src="https://i.imgur.com/PZyxgfT.jpg" />
 					:
-					<Card.Img variant="top" src="https://i.imgur.com/HR6mFkf.jpg" />
+					<Card.Img variant="top" src="https://i.imgur.com/qqmyoRV.jpg" />
 				}
 				<Card.Body>
 					<Card.Title>{props.card['Heading']}</Card.Title>
@@ -19,7 +19,7 @@ const Block = (props) => {
 				</Card.Footer>
 			</Card>
 		</div>
-	);
+	)
 }
  
 export default Block;
