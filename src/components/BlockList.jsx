@@ -56,9 +56,8 @@ class BlockList extends Component {
 	}
 
 	render() { 
-		const blockJsx = [...this.state.collection]
-											.slice(this.state.firstIndex, this.state.lastIndex)
-											.map( (card, index)  => <Block key={index} card={card} {...card} /> )
+		const blockJsx = [...this.state.collection].slice(this.state.firstIndex, this.state.lastIndex).map( (card, index)  => <Block key={index} card={card} {...card} /> )
+		
 		return (
 			<Container>
 				<Row>
